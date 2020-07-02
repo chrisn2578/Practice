@@ -1,0 +1,10 @@
+"""Simple module string"""
+#!/usr/bin/env python3
+
+def main():
+    """"The main function"""
+    name = str(input("What is your name?"))
+    print('Hello, ' + name + ', nice to meet you!')
+
+if __name__ == '__main__':
+    main()
