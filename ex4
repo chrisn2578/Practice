@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+"""Madlibs"""
+def main():
+    """Takes input and outputs a madlib"""
+    noun = input("Enter a noun:")
+    verb = input("Enter a verb:")
+    adjective = input("Enter an adjective:")
+    adverb = input("Enter an adverb:")
+
+    print("Will you " + verb + " the " + adjective + noun + " " + adverb + "?")
+
+if __name__ == '__main__':
+    main()
