@@ -1,0 +1,11 @@
+#!/user/bin/env python3
+
+"""Quote program"""
+def main():
+    """Quotes the input given"""
+    quote = input("Please enter quote:")
+    author = input("Please enter author:")
+    print(author + " says, \"" + quote + "\"")
+
+if __name__ == '__main__':
+    main()
