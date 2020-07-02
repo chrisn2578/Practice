@@ -1,0 +1,10 @@
+#!/usr/bin/env/ python3
+
+"""Docstring"""
+def main():
+    """Reads input and outputs string length"""
+    input_str = input("Please enter a string: ")
+    print(input_str, 'has ', str(len(input_str)), ' characters.')
+
+if __name__ == '__main__':
+    main()
