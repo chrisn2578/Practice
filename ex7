@@ -1,0 +1,16 @@
+"""Area Calculation"""
+#!/usr/bin/env python3
+import math
+
+def main():
+    """Takes area and feet to determine area"""
+    room_length = int(input("What is the length of the room in feet? "))
+    room_width = int(input("What is the width of the room in feet? "))
+    area_feet = room_length*room_width
+    area_meters = pow(area_feet,2)*0.09290304
+    print("You entered dimensions of {} feet by {} feet".format(room_length,room_width))
+    print("The area is \n{} square feet\n{} square meters".format(area_feet,area_meters))
+    
+
+if __name__ == '__main__':
+    main() 
