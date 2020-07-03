@@ -1,0 +1,20 @@
+"""Pizza Division"""
+
+def main():
+    """With given pizzas and number of people, share like a communist"""
+    people = int(input("How many people? "))
+    pizzas = int(input("How many pizzas? "))
+    slice_per_pizza = int(input("How many slices per pizza? "))
+    total_slices = pizzas*slice_per_pizza
+    """Slices are assumed to be 8 per pie"""
+    slice_per_person = int(total_slices/people)
+    remaining_slices = int(total_slices % slice_per_person)
+
+    print("{} people with {} pizzas".format(people,pizzas))
+    print("Each pizza has {} slices.".format(slice_per_pizza))
+    print("Each person gets {} pieces of pizza".format(slice_per_person))
+    # print("There are {} leftover pieces.".format(total_slices%slice_per_person)))
+    print("There are {} leftover pieces.".format(remaining_slices))
+
+if __name__ == '__main__':
+    main()
