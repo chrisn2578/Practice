@@ -1,0 +1,35 @@
+"""Self-Checkout Exercise"""
+
+def main():
+    """Runs prompts"""
+    subtotal = user_selection()
+    calculation(subtotal)
+
+def user_selection():
+    """Prompts user for price of items"""
+    counter = 1
+    subtotal = 0
+    shopping = True
+
+    while shopping != False:
+        item_price = int(input("Please enter the price of item {}. Enter -1 if you have no more items: ".format(counter)))
+        if item_price == -1:
+            shopping = True
+            return subtotal
+        quantity = int(input("Please enter quantity of item {}: ".format(counter)))
+        total_set_value = item_price*quantity
+        subtotal += total_set_value
+        counter+=1
+    return subtotal
+
+def calculation(subtotal:int):
+    tax_constant = 1.055
+    tax = round(subtotal*.055,2)
+    total = round(tax_constant*subtotal,2)
+    print("Subtotal: ${}".format(subtotal))
+    print("Tax: ${}".format(tax))
+    print("Total: ${}".format(total))
+
+if __name__ == '__main__':
+    main()
+
