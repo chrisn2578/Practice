@@ -1,0 +1,14 @@
+"""Paint Calculation"""
+import math
+
+def main():
+    """Given length and width, calculate gallons of paint needed"""
+    length = int(input("Please enter the length: "))
+    width = int(input("Please enter the width: "))
+    area = length*width
+    gallon_value = 350
+    gallons_needed = math.ceil(area/gallon_value)
+    print("You will need to purchase {} gallons of paint to cover {} square feet".format(gallons_needed,area))
+
+if __name__ == '__main__':
+    main()
