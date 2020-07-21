@@ -1,0 +1,16 @@
+
+
+"""Currency Conversion"""
+def main():
+    """Prompts for euros and calls euros_to_usd to convert values"""
+    euros = float(input(("How many Euros would you like to convert to USD?  ")))
+    rate_from = float(input("What is the exchange rate?  "))
+    euro_to_usd(euros, rate_from)
+
+def euro_to_usd(euros:int, rate_from):
+    """Takes arguments and converts from euros to USD"""
+    amount_to = round((euros*rate_from/100),2)
+    print("{} euros at an exchange rate of {} is {} U.S. dollars.".format(euros,rate_from,amount_to))
+
+if __name__ == '__main__':
+    main()
