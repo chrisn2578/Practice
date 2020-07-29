@@ -1,0 +1,17 @@
+
+"""Principal Interest"""
+
+def main():
+    """Prompts for principal, rate, and years values to be calculated."""
+    principal = int(input("Enter the principal:  "))
+    rate = int(input("Enter the rate as percentage (ex. 17 not .17):  "))
+    years = int(input("Enter the number of years:  "))
+    calculate(principal,rate,years)
+
+def calculate(p,r,y):
+    """Calculates interest given princiapl, rate of interest, and number of years."""
+    value = p*(1+r*y)
+    print("After {} years at {}, the investment will be worth ${}".format(y, r, value)) 
+
+if __name__ == '__main__':
+    main()
